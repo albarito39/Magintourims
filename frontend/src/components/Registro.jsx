@@ -24,9 +24,9 @@ function Registrarse() {
 
   return (
     <div className="container vh-100 m-0 d-flex row justify-content-center align-items-center">
-      <div className="m-0 d-flex row justify-content-center align-items-center">
-        <div className="col">
-          <h4>Registro de usuario</h4>
+      <div className="mx-auto d-flex row justify-content-center align-items-center">
+        <div className="col mx-auto">
+          <h5>Registro de usuario</h5>
           <button className="btn btn-primary" onClick={openModal1}>
             Click Aqui
           </button>

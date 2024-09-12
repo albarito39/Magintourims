@@ -28,7 +28,7 @@ function inicio() {
           <button type="button" class="btn btn-primary m-2">
             Registrate
           </button>
-          <Link class="m-2">Olvidaste tu contraseña?</Link>
+          <Link class="m-2" style={{textDecoration: "none"}}>Olvidaste tu contraseña?</Link>
           <div className="col-3">
           <svg
             xmlns="http://www.w3.org/2000/svg"
