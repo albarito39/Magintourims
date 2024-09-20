@@ -20,8 +20,6 @@ function Registrarse() {
   const closeModal2 = () => {
     setShowModal2(false);
   };
-
-
   return (
     <div className="container vh-100 m-0 d-flex row justify-content-center align-items-center">
       <div className="mx-auto d-flex row justify-content-center align-items-center">
@@ -85,14 +83,14 @@ function Registrarse() {
                         <option value="2">Cedula de ciudadania</option>
                         <option value="3">Pasaporte</option>
                       </select>
-                      </div>
-                      <div className="col">
-                        <input
-                          type=""
-                          class="form-control m-2"
-                          id="exampleFormControlInput1"
-                          placeholder=""
-                        />
+                    </div>
+                    <div className="col">
+                      <input
+                        type=""
+                        class="form-control m-2"
+                        id="exampleFormControlInput1"
+                        placeholder=""
+                      />
                     </div>
                   </div>
                   <input
@@ -114,15 +112,16 @@ function Registrarse() {
                     placeholder="Confirmar constraseña"
                   />
                   <label>
-                    <input 
-                    type="checkbox"
-                    class="form-check-input m-1"/>
-                    Aceptar 
-                    <Link to="" className="m-1" style={{textDecoration: "none"}}>
-                    politicas y privacidad
+                    <input type="checkbox" class="form-check-input m-1" />
+                    Aceptar
+                    <Link
+                      to=""
+                      className="m-1"
+                      style={{ textDecoration: "none" }}
+                    >
+                      politicas y privacidad
                     </Link>
                   </label>
-                  
                 </div>
                 <div className="modal-footer">
                   <button
@@ -167,7 +166,174 @@ function Registrarse() {
                   ></button>
                 </div>
                 <div className="modal-body">
-                  Hide this modal and show the first with the button below.
+                  <h5>Complete la siguiente informacion:</h5>
+                  <select
+                    class="form-select m-2"
+                    aria-label="Default select example"
+                  >
+                    <option selected>Tipo de Empresa:</option>
+                    <option value="1">Empresario individual</option>
+                    <option value="2">Sociedad Limitada (S.L.)</option>
+                    <option value="3">Sociedad Anónima (S.A.)</option>
+                    <option value="4">Asociaciones sin ánimo de lucro</option>
+                    <option value="5">Sociedad Colectiva</option>
+                    <option value="6">Sociedad Comanditaria</option>
+                    <option value="7">Comunidad de Bienes</option>
+                    <option value="8">Sociedad Cooperativa</option>
+                  </select>
+                  <input
+                    type="nombre"
+                    class="form-control m-2"
+                    id="exampleFormControlInput1"
+                    placeholder="Nombre de la Empresa"
+                  />
+                  <div className="row">
+                    <div className="col">
+                      <select
+                        class="form-select m-2"
+                        aria-label="Default select example"
+                      >
+                        <option selected>Identificación Fiscal</option>
+                        <option value="1">NIT</option>
+                      </select>
+                    </div>
+                    <div className="col">
+                      <input
+                        type=""
+                        class="form-control m-2"
+                        id="exampleFormControlInput1"
+                        placeholder=""
+                      />
+                    </div>
+                  </div>
+                  <div className="row">
+                    <div className="col">
+                      <select
+                        class="form-select m-2"
+                        aria-label="Default select example"
+                      >
+                        <option selected>Categoría de Empresa:</option>
+                        <option value="1">Agencia de Turismo</option>
+                        <option value="2">Aerolinea</option>
+                        <option value="3">Hotel</option>
+                      </select>
+                    </div>
+                    <div className="col">
+                      <input
+                        type="nombre"
+                        class="form-control m-2"
+                        id="exampleFormControlInput1"
+                        placeholder=""
+                      />
+                    </div>
+                  </div>
+                  <input
+                    type="nombre"
+                    class="form-control m-2"
+                    id="exampleFormControlInput1"
+                    placeholder="Dirección"
+                  />
+                  <input
+                    type="number"
+                    class="form-control m-2"
+                    id="exampleFormControlInput1"
+                    placeholder="Telefono/Celular Oficial"
+                  />
+                  <input
+                    type="email"
+                    class="form-control m-2"
+                    id="exampleFormControlInput1"
+                    placeholder="Correo electronico Oficial"
+                  />
+                  <div className="row">
+                    <div className="col">
+                      <select
+                        class="form-select m-2"
+                        aria-label="Default select example"
+                      >
+                        <option selected>Tipo de cuenta:</option>
+                        <option value="1">Cuenta de Ahorros</option>
+                        <option value="2">Cuenta Corriente</option>
+                      </select>
+                    </div>
+                    <div className="col">
+                      <input
+                        type=""
+                        class="form-control m-2"
+                        id="exampleFormControlInput1"
+                        placeholder=""
+                      />
+                    </div>
+                  </div>
+                  <div className="my-4">
+                    <label htmlFor="formFile" className="form-label">
+                    Aqui Certificados de registro de la empresa:
+                    </label>
+                    <input className="form-control" type="file" id="formFile" />
+                  </div>
+                  <div className="my-4">
+                    <label htmlFor="formFile" className="form-label">
+                    Aqui licencias comerciales:
+                    </label>
+                    <input className="form-control" type="file" id="formFile" />
+                  </div>
+                  <div className="my-4">
+                    <label htmlFor="formFile" className="form-label">
+                    Aqui actas constitutivas:
+                    </label>
+                    <input className="form-control" type="file" id="formFile" />
+                  </div>
+                  <p>Datos del Representante Legal:</p>
+                  <input
+                    type="nombre"
+                    class="form-control m-2"
+                    id="exampleFormControlInput1"
+                    placeholder="Nombre del Representante Legal"
+                  />
+                  <div className="row">
+                    <div className="col">
+                      <select
+                        class="form-select m-2"
+                        aria-label="Default select example"
+                      >
+                        <option selected>documento:</option>
+                        <option value="1">Licencia de conducir</option>
+                        <option value="2">Cedula de ciudadania</option>
+                        <option value="3">Pasaporte</option>
+                      </select>
+                    </div>
+                    <div className="col">
+                      <input
+                        type=""
+                        class="form-control m-2"
+                        id="exampleFormControlInput1"
+                        placeholder=""
+                      />
+                    </div>
+                  </div>
+                  <input
+                    type="email"
+                    class="form-control m-2"
+                    id="exampleFormControlInput1"
+                    placeholder="Correo electronico"
+                  />
+                  <input
+                    type="number"
+                    class="form-control m-2"
+                    id="exampleFormControlInput1"
+                    placeholder="Telefono/Celular Personal"
+                  />
+                  <label>
+                    <input type="checkbox" class="form-check-input m-1" />
+                    Aceptar
+                    <Link
+                      to=""
+                      className="m-1"
+                      style={{ textDecoration: "none" }}
+                    >
+                      politicas y privacidad
+                    </Link>
+                  </label>
                 </div>
                 <div className="modal-footer">
                   <button
