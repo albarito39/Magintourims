@@ -218,14 +218,6 @@ function Registrarse() {
                         <option value="3">Hotel</option>
                       </select>
                     </div>
-                    <div className="col">
-                      <input
-                        type="nombre"
-                        class="form-control m-2"
-                        id="exampleFormControlInput1"
-                        placeholder=""
-                      />
-                    </div>
                   </div>
                   <input
                     type="nombre"
