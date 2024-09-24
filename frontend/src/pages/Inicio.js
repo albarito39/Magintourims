@@ -1,5 +1,5 @@
 import React from "react";
-import Cabecera from '../components/inicio';
+import Cabeza from '../components/inicio';
 
 
 
@@ -7,7 +7,7 @@ import Cabecera from '../components/inicio';
 function Inicio() {
     return (
         <div className="Login">
-            <Cabecera />
+            <Cabeza />
             
         </div>
     );

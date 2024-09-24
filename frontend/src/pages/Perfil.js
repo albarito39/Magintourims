@@ -1,13 +1,12 @@
 import React from "react";
-import Profile from '../components/perfil.jsx';
-import Registrarse from "../components/Registro.jsx"
+import EditButton from '../components/perfil.jsx';
+
 
 
 function Perfil() {
     return (
         <div className="perfil">
-            <Profile />
-            <Registrarse />
+            <EditButton />
         </div>
     );
 }
