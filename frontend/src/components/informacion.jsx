@@ -1,5 +1,7 @@
 import React from "react";
 import "../styles/main.css";
+import Carusel from "./carusel";
+import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
 
 function Informacion(props) {
   return (
@@ -11,11 +13,12 @@ function Informacion(props) {
       tabIndex="-1"
       style={{ display: "block" }}
     >
-      <div className="m-3 p-5 d-block vh-100 card_informacion">
+      <div className="m-3 p-4 d-block vh-100 card_informacion">
         <div className="">
-          <button onClick={props.close}>close</button>
+          <ChevronLeftIcon style={{color: "aqua"}} onClick={props.close}>close</ChevronLeftIcon>
         </div>
-        <div>
+        <Carusel/>
+        <div className="m-4">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, ab
           laborum? Delectus, hic repellat vitae voluptas, corporis facilis
           mollitia ullam adipisci necessitatibus natus consequuntur laudantium
