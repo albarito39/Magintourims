@@ -10,5 +10,12 @@ img {
 .card-title {
     color: aqua !important;
 }
+.ver_mas{
+    background-color: rgba(128, 128, 128, 0.616);
+}
 
+.card_informacion {
+    background-color: aliceblue;
+    border-radius: 15px;
+}
 

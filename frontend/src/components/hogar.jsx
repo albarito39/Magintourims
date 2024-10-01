@@ -1,45 +1,52 @@
 import React, { useState } from "react";
-import muralla from "../images/muralla china.jpg";
-import "../styles/main.css"
-import { Link } from "react-router-dom";
-import Informacion from "./informacion";
+import Card from '@mui/material/Card';
+import CardContent from '@mui/material/CardContent';
+import CardMedia from '@mui/material/CardMedia';
+import Typography from '@mui/material/Typography';
+import CardActionArea from '@mui/material/CardActionArea';
+import imagecard from '../images/muralla china.jpg';
+import Informacion from './informacion';
+import Calificacion from './calificacion';
 
-function Home() {
+
+export default function ActionAreaCard() {
   const [showModal1, setShowModal1] = useState(false);
-  
-  const openModal1 = () => {
-    setShowModal1(true);
-  };
 
+  const handleClick = () =>{
+    setShowModal1(true)
+  }
+  const closeModal1 = () => {
+    setShowModal1(false);
+  };
   return (
-  
-    <div className="card mb-3" style={{ maxWidth: "540px" }}>
-      <div className="row g-0">
-        <div className="col-md-4 text-center p-2">
-          <img src={muralla} className="w-100"  alt="muralla china" />
-        </div>
-        <div className="col-md-8">
-          <div className="card-body">
-            <h5 className="card-title"> Tour por la Muralla China</h5>
-            <p className="card-text">
-            Visita guiada por toda la muralla china incluye
-            Alimentación y alojamiento.....
-            </p>
-            <div className="d-flex justify-content-end">
-              <Link className="text-right"
-            style={{textDecoration: "none"}}
-            onClick={openModal1}>
-            ver mas
-            </Link>
-            {showModal1 && (
-              <Informacion/>
-            )}
-            </div>
-          </div>
-        </div>
-      </div>
+    <div>
+      <Card  onClick={handleClick} sx={{ maxWidth: 500, padding:'30px' }}>
+      <CardActionArea>
+        <CardMedia
+          classes={{padding:'50px'}}
+          component="img"
+          
+          image={imagecard}
+          alt="green iguana"
+        />
+        <CardContent>
+          <Typography gutterBottom variant="h5" component="div">
+            Muralla China
+          </Typography>
+          <Typography variant="body2" sx={{ color: 'text.secondary' }}>
+            Lizards are a widespread group of squamate reptiles, with over 6,000
+            species, ranging across all continents except Antarctica
+          </Typography>
+          <Calificacion/>
+        </CardContent>
+      </CardActionArea>
+    </Card>
+    {showModal1 && (
+     
+        <Informacion close={closeModal1}/>
+      
+      )}
     </div>
+    
   );
 }
-
-export default Home;
