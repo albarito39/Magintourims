@@ -19,7 +19,7 @@ export default function ActionAreaCard() {
     setShowModal1(false);
   };
   return (
-    <div>
+    <div className="">
       <Card  onClick={handleClick} sx={{ maxWidth: 500, padding:'30px' }}>
       <CardActionArea>
         <CardMedia

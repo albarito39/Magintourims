@@ -1,6 +1,6 @@
 import React from 'react';
 import { MDBCol, MDBContainer, MDBRow, MDBCard, MDBCardText, MDBCardBody, MDBCardImage, MDBBtn, MDBTypography } from 'mdb-react-ui-kit';
-
+import "../components/cabezera"
 export default function EditButton() {
   return (
     <div className="gradient-custom-2" style={{ backgroundColor: '#9de2ff' }}>
