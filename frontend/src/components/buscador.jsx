@@ -2,24 +2,12 @@ import React from 'react';
 
 const Navbar = () => {
     return (
-        <div className='flex' >
-            <nav className="navbar navbar-light bg-light">
-
-                <form className="form-inline row">
-                    <div className="col"><input
-                        className="form-control mr-sm-2"
-                        type="search"
-                        placeholder="Search"
-                        aria-label="Search"
-                    /></div>
-                    <div className="col"><button className="btn btn-outline-success my-2 my-sm-0" type="submit" >
-                        Search
-                    </button></div>
-                    
-                    
-                </form>
-            </nav>
-        </div>
+<div class="input-group rounded">
+  <input type="search" class="form-control rounded" placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
+  <span class="input-group-text border-0" id="search-addon">
+    <i class="fas fa-search"></i>
+  </span>
+</div>
     );
 };
 
