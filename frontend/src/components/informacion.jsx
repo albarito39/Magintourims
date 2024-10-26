@@ -5,6 +5,7 @@ import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
 import Button from "@mui/material/Button";
 
 function Informacion(props) {
+  const { detalles } = props;
   return (
     <div
       className="modal fade show d-block ver_mas"
@@ -23,8 +24,7 @@ function Informacion(props) {
         <Carusel />
         <div className="m-4">
           <h5 style={{ color: "aqua" }}>Descripción</h5>
-          Tour por toda la muralla china para dos personas con comida,
-          alojamiento y operador privado
+          {detalles.descripcion}
         </div>
         <div className="m-4">
           <h5 style={{ color: "aqua" }}>Localización</h5>
@@ -44,9 +44,16 @@ function Informacion(props) {
               title="location"
             ></iframe>
           </div>
-          <div className="p-2"><h4>
-            $316,23 USD</h4></div>
-          <Button variant="contained" color="success" style={{width: "240px", backgroundColor: "aqua"}}>
+          <div className="p-2">
+            <h5 style={{ color: "aqua" }}>Precio total:</h5>
+            <h4>$316,23 USD</h4>
+          </div>
+          <Button
+            variant="contained"
+            color="success"
+            style={{ width: "240px", backgroundColor: "aqua" }}
+            className=" text-center"
+          >
             Reservar
           </Button>
         </div>
