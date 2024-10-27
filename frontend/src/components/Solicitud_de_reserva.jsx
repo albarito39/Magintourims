@@ -4,6 +4,8 @@ import StarIcon from "@mui/icons-material/Star";
 import { Link } from "@mui/material";
 import Avatar from "@mui/material/Avatar";
 import { deepOrange } from "@mui/material/colors";
+import Calendario from "../components/calendario"
+
 function Reserva() {
   return (
     <div className="container ">
@@ -53,18 +55,9 @@ function Reserva() {
         <h4 className="p-2">Tu viaje:</h4>
         <div className="col">
           <h6 className="m-0">Fecha</h6>
-          <p style={{ color: "gray", display: "inline" }}>10-15 de Sep</p>
         </div>
         <div className="col text-end">
-          <Link
-            className="col"
-            style={{
-              textDecoration: "none",
-              display: "inline",
-            }}
-          >
-            Editar
-          </Link>
+        <Calendario />
         </div>
       </div>
       <div className="row mt-2">
