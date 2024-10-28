@@ -10,7 +10,7 @@ import '../styles/cabezera.css'
 
 
 export default function LabelBottomNavigation() {
-  const [value, setValue] = React.useState('Homents');
+  const [value, setValue] = React.useState('');
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
@@ -19,36 +19,39 @@ export default function LabelBottomNavigation() {
   return (
     <div className="fixed-bottom  ">
       <BottomNavigation value={value} onChange={handleChange}>
-       
-          <BottomNavigationAction
-            label="Homents"
-            value="Homents"
-            icon={<HomeIcon />}
-            
-          />
-        
-  
 
-          <BottomNavigationAction
-            label="Reserva"
-            value="Reserva"
-            icon={<ReservaIcon />}
-            onClick={handleChange}
-          />
-     
 
- 
-          <BottomNavigationAction
-            label="map"
-            value="map"
-            icon={<MapIcon />}
-          />
-       
+        <BottomNavigationAction
+          label="Homents"
+          value="Homents"
+          icon={<HomeIcon />}
+          href='/Hogar'
 
-          <BottomNavigationAction
-            label="perfil"
-            value="perfil"
-            icon={<FaceRetouchingNaturalIcon />} />
+        />
+
+        <BottomNavigationAction
+          label="Reserva"
+          value="Reserva"
+          icon={<ReservaIcon />}
+          href='/Reserva'
+        />
+
+
+
+        <BottomNavigationAction
+          label="map"
+          value="map"
+          icon={<MapIcon />}
+          href='/Mapa'
+        />
+
+
+        <BottomNavigationAction
+          label="perfil"
+          value="perfil"
+          icon={<FaceRetouchingNaturalIcon />}
+          href='/perfil' 
+          />
 
       </BottomNavigation>
 
