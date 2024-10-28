@@ -1,7 +1,13 @@
 import React from "react";
+
 import muralla_china from "../images/muralla china.jpg";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
+import StarIcon from "@mui/icons-material/Star";
 import { Link } from "@mui/material";
+import Avatar from "@mui/material/Avatar";
+import { deepOrange } from "@mui/material/colors";
+import Calendario from "../components/calendario"
+
 function Reserva() {
   return (
     <div className="container ">
@@ -19,16 +25,30 @@ function Reserva() {
         <div className="img-fluid col">
           {" "}
           <img
-            src={muralla_china}
-            style={{ maxHeight: "140px", maxWidth: "140px" }}
+
+            src="https://th.bing.com/th/id/OIP.xHElQeIFdozuiFmq7FT-SgHaD4?rs=1&pid=ImgDetMain"
+            style={{ maxHeight: "200px", maxWidth: "200px" }}
             alt=""
           />
         </div>
         <div className="col">
-          <p style={{ color: "gray" }} className="m-1">
+          <p style={{ color: "gray" }} className="">
             Tipo de viaje: Tour
           </p>
           <h4>Muralla China</h4>
+          <div className="d-flex flex-row mt-2">
+            <div className="icono star">
+              <StarIcon />
+            </div>
+            <div className="col">
+              <h6>4.50(250)</h6>
+            </div>
+            <div className="user_name"></div>
+            <div icono avatar>
+              <Avatar sx={{ bgcolor: deepOrange[500] }} >D</Avatar>
+            </div>
+            <h6>Juan David</h6>
+          </div>
         </div>
         <hr className="mt-2" style={{ border: "solid 4px" }} />
       </div>
@@ -37,18 +57,9 @@ function Reserva() {
         <h4 className="p-2">Tu viaje:</h4>
         <div className="col">
           <h6 className="m-0">Fecha</h6>
-          <p style={{ color: "gray", display: "inline" }}>10-15 de Sep</p>
         </div>
         <div className="col text-end">
-          <Link
-            className="col"
-            style={{
-              textDecoration: "none",
-              display: "inline",
-            }}
-          >
-            Editar
-          </Link>
+        <Calendario />
         </div>
       </div>
       <div className="row mt-2">
@@ -164,7 +175,8 @@ function Reserva() {
       </div>
       <div className="text-center">
         <button type="button" class="btn btn-primary mb-2">
-          Registrate
+          Continuar
+
         </button>
       </div>
     </div>
