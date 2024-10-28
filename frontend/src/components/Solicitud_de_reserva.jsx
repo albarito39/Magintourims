@@ -1,4 +1,6 @@
 import React from "react";
+
+import muralla_china from "../images/muralla china.jpg";
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import StarIcon from "@mui/icons-material/Star";
 import { Link } from "@mui/material";
@@ -23,6 +25,7 @@ function Reserva() {
         <div className="img-fluid col">
           {" "}
           <img
+
             src="https://th.bing.com/th/id/OIP.xHElQeIFdozuiFmq7FT-SgHaD4?rs=1&pid=ImgDetMain"
             style={{ maxHeight: "200px", maxWidth: "200px" }}
             alt=""
@@ -47,7 +50,6 @@ function Reserva() {
             <h6>Juan David</h6>
           </div>
         </div>
-
         <hr className="mt-2" style={{ border: "solid 4px" }} />
       </div>
 
@@ -174,6 +176,7 @@ function Reserva() {
       <div className="text-center">
         <button type="button" class="btn btn-primary mb-2">
           Continuar
+
         </button>
       </div>
     </div>
