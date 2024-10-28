@@ -9,7 +9,7 @@ import Informacion from './informacion';
 import Calificacion from './calificacion';
 
 
-export default function ActionAreaCard() {
+export default function ActionAreaCard(props) {
   const [showModal1, setShowModal1] = useState(false);
 
   const handleClick = () =>{

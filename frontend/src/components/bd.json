@@ -1,0 +1,14 @@
+{
+    "sitios": [
+        {
+            "pais": "Colombia",
+            "precio": "200.000",
+            "image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/15/4d/45/82/colombia.jpg?w=1400&h=500&s=1",
+            "fecha": "30 de noviembre",
+            "descripcion": "Detrás de Cien años de soledad, se encuentra un país real que cuenta la belleza detrás de tradiciones, culturas y narrativas que vale la pena conocer."
+        }
+    ],
+    "usuarios": [
+        {}
+    ]
+}
